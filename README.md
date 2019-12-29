@@ -24,7 +24,7 @@ pip install numpy scipy scikit-learn pandas joblib
 pip install tpot
 ```
 
-## auto-sklearn example
+## TPOT example
 
 You will find [examples][example] in the official site.
 ```
