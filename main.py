@@ -7,7 +7,7 @@ import time
 
 def tpot_classifier(X, y):
     X_train, X_test, y_train, y_test = sklearn.model_selection.train_test_split(X, y, random_state=39)
-    pipeline_optimizer = TPOTClassifier(generations=5, population_size=20, cv=5, random_state=42, verbosity=2)
+    pipeline_optimizer = TPOTClassifier(generations=10, population_size=100, cv=5, random_state=42, verbosity=2)
     pipeline_optimizer.fit(X_train, y_train)
     print("Accuracy score", pipeline_optimizer.score(X_test, y_test))
 
